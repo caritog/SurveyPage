@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="tittle">Encuesta - Centro vacacional La Península</h1>
+        <p id="description">
+            Gracias por tomarse el tiempo de ayudarnos a mejorar, recuerde que debe ser mayor de edad para diligenciarla
+        </p>
+    </header>
+    <main>
+        <form id="survey-form" method="POST">
+            <fieldset class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" id="name" class="form-control" placeholder="Escriba su nombre"
+                    required="" >
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="correo" id="email" class="form-control" placeholder="Escriba su correo"
+                    required="" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"> 
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="number">Edad</label>
+                <input type="number" name="edad" id="number" class="form-control" placeholder="Edad" required="" min="18" max="99">
+            </fieldset>
+
+
+            <fieldset class="form-group">
+                <p>
+                    Desde su punto de vista, ¿Cómo describe al Centro vacacional La Península?
+                </p>
+                <select id="dropdown" >
+                    <option disabled="" selected="" value="">Seleccione una opción</option>
+                    <option value="America">Un lugar excelente para disfrutar con familiares y amigos en vacaciones o
+                        alguna celebración especial</option>
+                    <option value="Europa">Es muy tranquilo para pasar las vacaciones y relajarse</option>
+                    <option value="Africa">Es un buen lugar, pero le faltan atracciones y más alternativas de dispersión
+                    </option>
+                    <option value="Asia">Es un lugar fantástico para interactuar con la naturaleza</option>
+                    <option value="Oceania">Es un lugar muy sencillo, pero tranquilo y bonito</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form-group" > 
+                <p>
+                    ¿Lo recomendarías a tus familiares y amigos?
+                </p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+                    Definitivamente
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+                    Quizás
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">
+                    No, no lo recomiendo
+                </label>
+            </fieldset>
+
+            <fieldset class="form-group" >
+                <p>
+                    ¿Qué es lo que más te ha llamado la atención o lo que más te gusta del centro vacacional La
+                    Península?
+                </p>
+                <select id="dropdown">
+                    <option disabled="" selected="" value="">Seleccione una opción</option>
+                    <option value="America">La piscina, el sauna y la sala de juegos</option>
+                    <option value="Europa">La tranquilidad del lugar y la convivencia en armonía con la naturaleza
+                    </option>
+                    <option value="Africa">Es un lugar maravilloso para disfrutar en familia y con amistades</option>
+                    <option value="Asia">La atención</option>
+                    <option value="Oceania">Todas las anteriores</option>
+                </select>
+            </fieldset>
+
+
+            <fieldset class="form-group" >
+                <p>¿Qué piensas que le hace falta a nuestro centro vacacional?
+                    <span>Marque todas las opciones que apliquen</span>
+                </p>
+                <label>
+                    <input name="prefer" value="bar" type="checkbox" class="input-checkbox">
+                    Un bar
+                </label>
+                <label>
+                    <input name="prefer" value="piscina" type="checkbox" class="input-checkbox">
+                    Otra piscina
+                </label>
+                <label>
+                    <input name="prefer" value="jacuzzi" type="checkbox" class="input-checkbox">
+                    Un jacuzzi
+                </label>
+                <label>
+                    <input name="prefer" value="caminatas" type="checkbox" class="input-checkbox">
+                    Realizar caminatas ecológicas
+                </label>
+                <label>
+                    <input name="prefer" value="juegos" type="checkbox" class="input-checkbox">
+                    Más juegos de mesa
+                </label>
+                <label>
+                    <input name="prefer" value="cabañas" type="checkbox" class="input-checkbox">
+                    Mejorar las instalaciones de las cabañas
+                </label>
+                <label>
+                    <input name="prefer" value="red" type="checkbox" class="input-checkbox">
+                    Colocar red Wifi
+                </label>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <p>
+                    ¿Alguna sugerencia o comentario?
+                    <span>(Opcional)</span>
+                </p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Ingrese su comentario aquí..."></textarea>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <button id="submit" type="submit" class="submit-button" aria-required="true">
+                    <a href="https://www.cotrafa.com.co/turismo" aria-required="true">Enviar</a>
+                </button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
