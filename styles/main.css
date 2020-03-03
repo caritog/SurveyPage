@@ -22,7 +22,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     display: block;
-    background-image: url(/images/Fondo2.jpg);
+    background-image: url(../images/Fondo2.jpg); /*FONDO 2 */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
